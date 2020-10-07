@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "text": "Forside",
+            "url": "/"
+        },
+        {
+            "text": "Flytning",
+            "url": "/flytning/"
+        },
+        {
+            "text": "Produkter",
+            "url": "/produkter/"
+        },
+        {
+            "text": "Kundeservice",
+            "url": "/kundeservice/"
+        },
+        {
+            "text": "Om Norlys",
+            "url": "/om-norlys/"
+        },
+        {
+            "text": "Bliv Kunde",
+            "url": "/bliv-kunde/"
+        }
+    ]
+}

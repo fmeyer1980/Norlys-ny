@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "avantGarden";
+  src: url("/fonts/avantGarden.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "helveticaNeue";
+  src: url("/fonts/helveticaNeueLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "helveticaNeue";
+  src: url("/fonts/helveticaNeueRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "helveticaNeue";
+  src: url("/fonts/helveticaNeueBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  @include apply-utility("font", "heading");
+  color: inherit;
+  @include apply-utility("leading", "flat");
+  // text-transform: uppercase;
+  letter-spacing: -0.03em;
+  @include apply-utility("weight", "normal");
+}
+
+h1,
+.h1 {
+  font-size: get-size("600");
+  margin-top: 0;
+}
+
+h2,
+.h2 {
+  font-size: get-size("500");
+}
+
+h3,
+.h3 {
+  font-size: get-size("400");
+}
+
+h4,
+.h4 {
+  font-size: get-size("300");
+}
+
+h5,
+.h5 {
+  font-size: get-size("200");
+}
+
+h6,
+.h6 {
+  font-size: get-size("100");
+}
+
+.text {
+  &-large {
+    font-size: calc(var(--size-300) + 2px);
+  }
+
+  &-small {
+    font-size: get-size("100");
+  }
+}

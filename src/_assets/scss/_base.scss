@@ -1,0 +1,57 @@
+body {
+  @include apply-utility("font", "base");
+  font-weight: 400;
+  font-size: calc(var(--size-100) + 1.6px);
+  background-color: get-color("light-glare");
+  color: get-color("dark-shade");
+  @include apply-utility("leading", "normal");
+}
+
+.container {
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+
+  &-left {
+    padding-left: var(--container-padding);
+  }
+
+  &-right {
+    padding-right: var(--container-padding);
+  }
+}
+
+a {
+  color: var(--color-black);
+}
+
+::selection {
+  background-color: get-color("light");
+  color: get-color("dark-shade");
+}
+
+.fill-current{
+  fill: currentColor;
+}
+
+// hr{
+//     border: 0;
+//     height: 1px;
+//     opacity: .08;
+// }
+
+// ::-webkit-scrollbar {
+//     width: var(--size-100);
+//     width: var(--size-100);
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     // --color-black: hsla(var(--hsl-h), 20%, 10%, .1);
+//     background-color: #E4491B;
+//     // background-color: var(--color-dark-gray-dark);
+// }
+
+// ::-webkit-scrollbar-track {
+//     --color-black: hsla(var(--hsl-h), 20%, 10%, .03);
+//     background-color: var(--color-black);
+//     // background-color: var(--color-primary-light);
+// }

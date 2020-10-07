@@ -1,0 +1,71 @@
+@charset "UTF-8";:root{--gutter:var(--size-600);--container:1280px}:root{--fluid-min-width:320;--fluid-max-width:1280;--fluid-min-size:15;--fluid-max-size:18;--fluid-min-ratio:1.2;--fluid-max-ratio:1.25;--fluid-screen:100vw;--fluid-bp:calc(
+    (var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) /
+      ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16))
+  )}@media screen and (min-width:1280px){:root{--fluid-screen:calc(var(--fluid-max-width) * 1px)}}:root{--fluid-max-negative:(1 / var(--fluid-max-ratio) / var(--fluid-max-ratio));--fluid-min-negative:(1 / var(--fluid-min-ratio) / var(--fluid-min-ratio));--fluid-min-scale--3:var(--fluid-min-scale--2) * var(--fluid-min-ratio) * var(--fluid-min-negative);--fluid-max-scale--3:var(--fluid-max-scale--2) * var(--fluid-max-ratio) * var(--fluid-max-negative);--fluid-min-size--3:(var(--fluid-min-size) * var(--fluid-min-scale--3))/16;--fluid-max-size--3:(var(--fluid-max-size) * var(--fluid-max-scale--3))/16;--size-xs:calc(
+    (
+        (var(--fluid-min-size--3) * 1rem) +
+          (var(--fluid-max-size--3) - var(--fluid-min-size--3)) *
+          var(--fluid-bp)
+      ) / 2
+  );--fluid-min-scale--2:var(--fluid-min-scale--1) * var(--fluid-min-ratio) * var(--fluid-min-negative);--fluid-max-scale--2:var(--fluid-max-scale--1) * var(--fluid-max-ratio) * var(--fluid-max-negative);--fluid-min-size--2:(var(--fluid-min-size) * var(--fluid-min-scale--2))/16;--fluid-max-size--2:(var(--fluid-max-size) * var(--fluid-max-scale--2))/16;--size-sm:calc(
+    (
+        (var(--fluid-min-size--2) * 1rem) +
+          (var(--fluid-max-size--2) - var(--fluid-min-size--2)) *
+          var(--fluid-bp)
+      ) / 1.5
+  );--fluid-min-scale--1:var(--fluid-min-ratio) * var(--fluid-min-negative);--fluid-max-scale--1:var(--fluid-max-ratio) * var(--fluid-max-negative);--fluid-min-size--1:(var(--fluid-min-size) * var(--fluid-min-scale--1))/16;--fluid-max-size--1:(var(--fluid-max-size) * var(--fluid-max-scale--1))/16;--size-100:calc(
+    (
+      (var(--fluid-min-size--1) * 1rem) +
+        (var(--fluid-max-size--1) - var(--fluid-min-size--1)) * var(--fluid-bp)
+    )
+  );--fluid-min-scale-0:var(--fluid-min-ratio);--fluid-max-scale-0:var(--fluid-max-ratio);--fluid-min-size-0:(var(--fluid-min-size))/16;--fluid-max-size-0:(var(--fluid-max-size))/16;--size-200:calc(
+    (
+      (var(--fluid-min-size-0) * 1rem) +
+        (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)
+    )
+  );--fluid-min-scale-1:var(--fluid-min-scale-0) * var(--fluid-min-ratio);--fluid-max-scale-1:var(--fluid-max-scale-0) * var(--fluid-max-ratio);--fluid-min-size-1:(var(--fluid-min-size) * var(--fluid-min-scale-0))/16;--fluid-max-size-1:(var(--fluid-max-size) * var(--fluid-max-scale-0))/16;--size-300:calc(
+    (
+      (var(--fluid-min-size-1) * 1rem) +
+        (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)
+    )
+  );--fluid-min-scale-2:var(--fluid-min-scale-1) * var(--fluid-min-ratio);--fluid-max-scale-2:var(--fluid-max-scale-1) * var(--fluid-max-ratio);--fluid-min-size-2:(var(--fluid-min-size) * var(--fluid-min-scale-1))/16;--fluid-max-size-2:(var(--fluid-max-size) * var(--fluid-max-scale-1))/16;--size-400:calc(
+    (
+      (var(--fluid-min-size-2) * 1rem) +
+        (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)
+    )
+  );--fluid-min-scale-3:var(--fluid-min-scale-2) * var(--fluid-min-ratio);--fluid-max-scale-3:var(--fluid-max-scale-2) * var(--fluid-max-ratio);--fluid-min-size-3:(var(--fluid-min-size) * var(--fluid-min-scale-2))/16;--fluid-max-size-3:(var(--fluid-max-size) * var(--fluid-max-scale-2))/16;--size-500:calc(
+    (
+      (var(--fluid-min-size-3) * 1rem) +
+        (var(--fluid-max-size-3) - var(--fluid-min-size-3)) * var(--fluid-bp)
+    )
+  );--fluid-min-scale-4:var(--fluid-min-scale-3) * var(--fluid-min-ratio);--fluid-max-scale-4:var(--fluid-max-scale-3) * var(--fluid-max-ratio);--fluid-min-size-4:(var(--fluid-min-size) * var(--fluid-min-scale-3))/16;--fluid-max-size-4:(var(--fluid-max-size) * var(--fluid-max-scale-3))/16;--size-600:calc(
+    (
+      (var(--fluid-min-size-4) * 1rem) +
+        (var(--fluid-max-size-4) - var(--fluid-min-size-4)) * var(--fluid-bp)
+    )
+  );--fluid-min-scale-5:var(--fluid-min-scale-4) * var(--fluid-min-ratio);--fluid-max-scale-5:var(--fluid-max-scale-4) * var(--fluid-max-ratio);--fluid-min-size-5:(var(--fluid-min-size) * var(--fluid-min-scale-4))/16;--fluid-max-size-5:(var(--fluid-max-size) * var(--fluid-max-scale-4))/16;--size-700:calc(
+    (
+      (var(--fluid-min-size-5) * 1rem) +
+        (var(--fluid-max-size-5) - var(--fluid-min-size-5)) * var(--fluid-bp)
+    )
+  );--fluid-min-scale-6:var(--fluid-min-scale-5) * var(--fluid-min-ratio);--fluid-max-scale-6:var(--fluid-max-scale-5) * var(--fluid-max-ratio);--fluid-min-size-6:(var(--fluid-min-size) * var(--fluid-min-scale-5))/16;--fluid-max-size-6:(var(--fluid-max-size) * var(--fluid-max-scale-5))/16;--size-800:calc(
+    (
+      (var(--fluid-min-size-6) * 1rem) +
+        (var(--fluid-max-size-6) - var(--fluid-min-size-6)) * var(--fluid-bp)
+    )
+  );--fluid-min-scale-7:var(--fluid-min-scale-6) * var(--fluid-min-ratio);--fluid-max-scale-7:var(--fluid-max-scale-6) * var(--fluid-max-ratio);--fluid-min-size-7:(var(--fluid-min-size) * var(--fluid-min-scale-6))/16;--fluid-max-size-7:(var(--fluid-max-size) * var(--fluid-max-scale-6))/16;--size-900:calc(
+    (
+      (var(--fluid-min-size-7) * 1rem) +
+        (var(--fluid-max-size-7) - var(--fluid-min-size-7)) * var(--fluid-bp)
+    )
+  );--fluid-min-scale-8:var(--fluid-min-scale-7) * var(--fluid-min-ratio);--fluid-max-scale-8:var(--fluid-max-scale-7) * var(--fluid-max-ratio);--fluid-min-size-8:(var(--fluid-min-size) * var(--fluid-min-scale-7))/16;--fluid-max-size-8:(var(--fluid-max-size) * var(--fluid-max-scale-7))/16;--size-lg:calc(
+    (
+      (var(--fluid-min-size-8) * 1rem) +
+        (var(--fluid-max-size-8) - var(--fluid-min-size-8)) * var(--fluid-bp)
+    )
+  );--fluid-min-scale-9:var(--fluid-min-scale-8) * var(--fluid-min-ratio);--fluid-max-scale-9:var(--fluid-max-scale-8) * var(--fluid-max-ratio);--fluid-min-size-9:(var(--fluid-min-size) * var(--fluid-min-scale-8))/16;--fluid-max-size-9:(var(--fluid-max-size) * var(--fluid-max-scale-8))/16;--size-xl:calc(
+    (
+        (var(--fluid-min-size-9) * 1rem) +
+          (var(--fluid-max-size-9) - var(--fluid-min-size-9)) * var(--fluid-bp)
+      ) * 1.1
+  )}*,::after,::before{box-sizing:border-box}blockquote,body,dd,dl,figure,h1,h2,h3,h4,h5,h6,p{margin:0}ol[class],ul[class]{list-style:none;margin-top:0;margin-bottom:0;padding-left:0}html{scroll-behavior:smooth;box-sizing:border-box;-webkit-text-size-adjust:100%;font-variant-ligatures:none;-webkit-font-variant-ligatures:none;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;text-shadow:rgba(0,0,0,.01) 0 0 1px}a[class]{text-decoration:none}body{text-rendering:optimizeSpeed;line-height:1.5}ol[class],ul[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img{max-width:100%;display:block}button,input,select,textarea{font:inherit}@media (prefers-reduced-motion:reduce){*{animation-duration:10ms!important;animation-iteration-count:1!important;transition-duration:10ms!important;scroll-behavior:auto!important}}body{font-family:Literata,Georgia,serif;font-weight:400;font-size:calc(var(--size-100) + 1.6px);background-color:#eee;color:#212121;line-height:1.5}.container{padding-left:var(--container-padding);padding-right:var(--container-padding)}.container-left{padding-left:var(--container-padding)}.container-right{padding-right:var(--container-padding)}a{color:var(--color-black)}::selection{background-color:#999;color:#212121}.fill-current{fill:currentColor}@font-face{font-family:avantGarden;src:url(/fonts/avantGarden.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:helveticaNeue;src:url(/fonts/helveticaNeueLight.woff2) format("woff2");font-weight:300;font-style:normal;font-display:swap}@font-face{font-family:helveticaNeue;src:url(/fonts/helveticaNeueRegular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:helveticaNeue;src:url(/fonts/helveticaNeueBold.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-family:"Red Hat Display","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:inherit;line-height:1.1;letter-spacing:-.03em;font-weight:400}.h1,h1{font-size:var(--size-600);margin-top:0}.h2,h2{font-size:var(--size-500)}.h3,h3{font-size:var(--size-400)}.h4,h4{font-size:var(--size-300)}.h5,h5{font-size:var(--size-200)}.h6,h6{font-size:var(--size-100)}.text-large{font-size:calc(var(--size-300) + 2px)}.text-small{font-size:var(--size-100)}.auto-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--auto-grid-min-size,16rem),1fr));grid-gap:var(--auto-grid-gap,var(--size-500))}.flow>*+*{margin-top:var(--flow-space,1em)}.full-bleed{width:100vw;margin-left:50%;transform:translateX(-50%)}.container-wrapper{padding-left:calc(((100% - var(--container-width))/ 2) - var(--gutter));padding-right:calc(((100% - var(--container-width))/ 2) - var(--gutter));border-left:var(--gutter) solid transparent;border-right:var(--gutter) solid transparent}.image-responsive{width:100%;height:auto;display:block}.line-clamp{display:-webkit-box;-webkit-line-clamp:var(--line-clamp-size,3);-webkit-box-orient:vertical;overflow:hidden}.site-head{background-color:#163d2b}

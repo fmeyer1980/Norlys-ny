@@ -1,11 +1,43 @@
-<header class="site-head">
-    {{ '/src/_includes/partials/svg/logo.svg' | svgContents | safe }}
+<header class="site-head [ container flow ] [ color-white flow-space-100 ]" :class="{ 'bg-primary-shade' : menu }"
+x-data="{ menu: false }"
+>
+    <div class="site-head__top">
+        <nav class="top-nav" aria-label="Top navigation">
+            <ul class="top-nav__list">
+                {% for item in navigation.topNav.items %}
+                    <li>
+                        <a {{ helpers.getLinkActiveState(item.url, page.url) | safe }} href="{{ item.url }}">{{ item.text }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <ul class="contact [ flow-left ] [ d-hidden md:d-flex text-100 flow-space-100 ]">
+            <li>T: <a href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
+            <li>M: <a href="mailto:{{ site.mail }}">{{ site.mail }}</a></li>
+        </ul>
+    </div>
+    <div class="site-head__bottom">
+        <a class="logo" href="">{{ '/src/_includes/partials/svg/logo.svg' | svgContents | safe }}</a>
+        <div class="dropdown [ d-flex md:d-hidden ]" @click="menu = true">
+            <span class="[ text-300 weight-bold pr-100 ]">Menu</span>
+            <div class="[ bg-secondary ]">
+             {{ '/src/_includes/partials/svg/bar.svg' | svgContents("fill-current") | safe }}
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="Main navigation" :class="{ 'active' : menu }"
+        x-show="menu"
+        @click.away="menu = false"
+        @keydown.escape.window="menu = false"
+        >
+            <ul class="main-nav__list">
+                {% for item in navigation.mainNav.items %}
+                    <li>
+                        <a class="[ text-200 weight-bold ]" {{ helpers.getLinkActiveState(item.url, page.url) | safe }} href="{{ item.url }}">{{ item.text }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+    
 
-    <ul>
-        {% for item in navigation.items %}
-            <li {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>
-                <a href="{{ item.url }}">{{ item.text }}</a>
-            </li>
-        {% endfor %}
-    </ul>
 </header>

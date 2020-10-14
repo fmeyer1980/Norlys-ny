@@ -1,28 +1,38 @@
 {
-    "items": [
-        {
-            "text": "Forside",
-            "url": "/"
-        },
-        {
-            "text": "Flytning",
-            "url": "/flytning/"
-        },
-        {
-            "text": "Produkter",
-            "url": "/produkter/"
-        },
-        {
-            "text": "Kundeservice",
-            "url": "/kundeservice/"
-        },
-        {
-            "text": "Om Norlys",
-            "url": "/om-norlys/"
-        },
-        {
-            "text": "Bliv Kunde",
-            "url": "/bliv-kunde/"
-        }
-    ]
+    "topNav": {
+        "items": [
+            {
+                "text": "Privat",
+                "url": "/"
+            },
+            {
+                "text": "Erhverv",
+                "url": "/erhverv"
+            },
+            {
+                "text": "Om Norlys",
+                "url": "/om-norlys/"
+            }
+        ]
+    },
+    "mainNav": {
+        "items": [
+            {
+                "text": "Flytning",
+                "url": "/flytning/"
+            },
+            {
+                "text": "Produkter",
+                "url": "/produkter/"
+            },
+            {
+                "text": "Kundeservice",
+                "url": "/kundeservice/"
+            },
+            {
+                "text": "Bliv Kunde",
+                "url": "/bliv-kunde/"
+            }
+        ]
+    }
 }

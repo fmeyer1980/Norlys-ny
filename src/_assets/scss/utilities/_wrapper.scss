@@ -1,6 +1,8 @@
-.container-wrapper {
-  padding-left: calc(((100% - var(--container-width)) / 2) - var(--gutter));
-  padding-right: calc(((100% - var(--container-width)) / 2) - var(--gutter));
-  border-left: var(--gutter) solid transparent;
-  border-right: var(--gutter) solid transparent;
+.container {
+  max-width: var(--container-width);
+  width: 100%;
+  padding-left: get-size('400');
+  padding-right: get-size('400');
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -1,4 +1,4 @@
-<div class="hero">
+<div class="hero [ full-bleed ]">
     {# <picture>
         <source srcset="https://images.takeshape.io/{{ imageParth }} 1x, https://res.cloudinary.com/fokus-design/image/upload/c_fill,f_auto,q_auto,w_960,h_600/v1599932711/{{ imageParth }} 2x" media="(max-width: 480px)">
         <source srcset="https://images.takeshape.io/{{ imageParth }} 1x, https://res.cloudinary.com/fokus-design/image/upload/c_fill,f_auto,q_auto,w_1536,h_800/v1599932711/{{ imageParth }} 2x" media="(max-width: 768px)">
@@ -9,7 +9,11 @@
     </picture>
     <img src="https://images.takeshape.io/{{ home.hero.image.path }}?auto=compress&auto=format&w=1600&h=900&fit=crop" alt="sds"> #}
 
-     <video muted="muted" autoplay loop="loop" playsinline="" preload="auto">
+    <video class="hero__video" muted="muted" autoplay loop="loop" playsinline="" preload="auto">
         <source src="https://images.takeshape.io/{{ privat.hero.video.path }}" />
     </video>
+    <div class="hero__content [ container ]">
+        <p class="[ text-200 ]">{{ privat.hero.subHeadline }}</p>
+        <h1 class="[ text-700 md:text-800 ]">{{ privat.hero.headline }}</h1>
+    </div>
 </div>

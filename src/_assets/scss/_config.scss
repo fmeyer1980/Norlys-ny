@@ -50,8 +50,8 @@ $gorko-config: (
   ),
   'font': (
     'items': (
-      'base': '"Literata", Georgia, serif',
-      'heading': '"Red Hat Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+      'base': ''BasisGrotesquePro', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif',
+      'heading': ''clearfaceStd', Georgia, serif',
     ),
     'output': 'standard',
     'property': 'font-family',
@@ -60,6 +60,56 @@ $gorko-config: (
     'items': $gorko-size-scale,
     'output': 'responsive',
     'property': 'margin-top',
+  ),
+  'p': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'padding',
+  ),
+  'pt': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'padding-top',
+  ),
+  'pr': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'padding-right',
+  ),
+  'pb': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'padding-bottom',
+  ),
+  'pl': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'padding-left',
+  ),
+  'm': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'margin',
+  ),
+  'mt': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'margin-top',
+  ),
+  'mr': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'margin-right',
+  ),
+  'mb': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'margin-bottom',
+  ),
+  'ml': (
+    'items': $gorko-size-scale,
+    'output': 'responsive',
+    'property': 'margin-left',
   ),
   'leading': (
     'items': (
@@ -93,6 +143,35 @@ $gorko-config: (
     ),
     'output': 'standard',
     'property': 'font-weight',
+  ),
+  'width': (
+    'items': (
+      'tiny': '10rem',
+      'short': '15rem',
+      'mid': '21rem',
+      'long': '26rem',
+      'major': '30rem',
+      'auto': 'auto',
+      'full': '100%',
+      '25': '25%',
+      '30': '30%',
+      '33': '33.333333%',
+      '40': '40%',
+      '50': '50%',
+      '75': '75%',
+      '80': '80%',
+    ),
+    'output': 'responsive',
+    'property': 'width',
+  ),
+  'd': (
+    'items': (
+      'hidden': 'none',
+      'block': 'block',
+      'flex': 'flex',
+    ),
+    'output': 'responsive',
+    'property': 'display',
   ),
   'breakpoints': (
     'md': '(min-width: 37em)',

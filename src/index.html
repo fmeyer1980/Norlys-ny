@@ -4,5 +4,16 @@
 
 {% block content %}
     {% include "partials/hero.html" %}
-    <h2>{{ privat.title }}</h2>
+    <div class="product-home [ full-bleed ] [ bg-primary-shade ]">
+        <div class="[ container ]">
+            <ul class="product-home__list">
+                {% for item in privatProducts %}
+                    <li class="[ width-mid bg-primary color-light-glare ]">
+                        {{ ('/src/_includes/partials/svg/'+ item.title +'.svg') | svgContents("fill-current") | safe }}
+                        {{ item.title }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 {% endblock content %}

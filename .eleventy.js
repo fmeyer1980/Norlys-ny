@@ -2,6 +2,12 @@ require('dotenv').config();
 const svgContents = require("eleventy-plugin-svg-contents");
 
 module.exports = function (config) {
+
+  config.addPassthroughCopy({ "src/_assets/fonts": "fonts" });
+  config.addPassthroughCopy({
+    "./node_modules/alpinejs/dist/alpine.js": "./js/alpine.js",
+  });
+
   config.addFilter('console', function (value) {
     return console.log(value);
   });

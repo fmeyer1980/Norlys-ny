@@ -12,6 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "alpinejs": "^2.7.0",
+    "concurrently": "^5.3.0",
     "dotenv": "^8.2.0",
     "eleventy-plugin-svg-contents": "^0.7.0",
     "gorko": "^0.2.3",
@@ -21,7 +23,6 @@
     "gulp-sass": "^4.1.0",
     "html-minifier": "^4.0.0",
     "node-fetch": "^2.6.1",
-    "sass": "^1.26.10",
-    "concurrently": "^5.3.0"
+    "sass": "^1.26.10"
   }
 }

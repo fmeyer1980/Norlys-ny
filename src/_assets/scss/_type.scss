@@ -1,31 +1,23 @@
 @font-face {
-  font-family: "avantGarden";
-  src: url("/fonts/avantGarden.woff") format("woff");
+  font-family: "clearfaceStd";
+  src: url("/fonts/clearfaceStdBold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "helveticaNeue";
-  src: url("/fonts/helveticaNeueLight.woff2") format("woff2");
-  font-weight: 300;
+  font-family: "basisGrotesquePro";
+  src: url("/basisGrotesqueProRegular.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "helveticaNeue";
-  src: url("/fonts/helveticaNeueRegular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "helveticaNeue";
-  src: url("/fonts/helveticaNeueBold.woff2") format("woff2");
-  font-weight: 600;
+  font-family: "BasisGrotesquePro";
+  src: url("/fonts/BasisGrotesqueProBold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }

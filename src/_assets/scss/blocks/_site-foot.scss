@@ -1,27 +1,26 @@
 .site-foot{
-    --flex-direction: column;
-    --hr-height: 1px;
-    --hr-width: 100%;
-
-    @include media-query('md'){
-        --flex-direction: row;
-        --hr-height: auto;
-        --hr-width: 1px;
-    }
-
     padding: get-size('900') 0 get-size('600');
 
     .top{
         display: flex;
         justify-content: space-between;
-        flex-direction: var(--flex-direction);
+        flex-direction: column;
         padding-bottom: get-size('600');
+
+        @include media-query('md'){
+            flex-direction: row;
+        }
 
         hr{
             border: none;
             background-color: rgba(get-color('black'), .06);
-            width: var(--hr-width);
-            height: var(--hr-height);
+            width: 100%;
+            height: 1px;
+
+            @include media-query('md'){
+                width: 1px;
+                height: auto;
+            }
         }
     }
 

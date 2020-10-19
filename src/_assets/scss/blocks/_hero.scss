@@ -3,6 +3,7 @@
     height: 26rem;
     display: flex;
     align-items: flex-end;
+    background-color: get-color(primary-shade);
     &::after{
         content: "";
         width: 100%;

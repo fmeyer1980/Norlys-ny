@@ -11,7 +11,7 @@ const watcher = () => {
 exports.default = parallel(sass);
 exports.watch = watcher;
 
-gulp.task('goron', function () {
+gulp.task('tokens', function () {
 
   return gulp.src('./src/_includes/css/tokens.css')
     .pipe(purgecss({
@@ -25,5 +25,5 @@ gulp.task('goron', function () {
 
 
 gulp.task('build', gulp.parallel(
-  'goron'
+  'tokens'
 ));

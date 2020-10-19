@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    {% include "partials/meta-info.html" %}
     <link rel="preload" href="/fonts/BasisGrotesqueProBold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/basisGrotesqueProRegular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/clearfaceStdBold.woff2" as="font" type="font/woff2" crossorigin>
@@ -24,10 +24,11 @@
   </head>
     <body>
     {% include "partials/site-head.html" %}
-    <main class="[ container ]">
+    <main class="[ container ] [ pb-900 ]">
         {% block content %}
             {{ content | safe }}
         {% endblock %}
     </main>
+    {% include "partials/site-foot.html" %}
   </body>
 </html>

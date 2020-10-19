@@ -16,9 +16,18 @@ module.exports = async () => {
         body: JSON.stringify({
             query: `
             {
-                getPrivatProductsList{
+                getPrivatProductsList(sort: [{field: "order", order: "asc"}]){
                     items{
                         title
+                        meta{
+                            title
+                            description
+                        }
+                        pageHeadline
+                        summary
+                        coverImage{
+                            path
+                        }
                     }
                   
                 }

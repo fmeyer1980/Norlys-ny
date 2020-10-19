@@ -1,0 +1,15 @@
+---
+pagination:
+  data: privatProducts
+  size: 1
+  alias: products
+permalink: '/products/{{ products.title | slug }}/'
+---
+{% extends "layouts/base.html" %} 
+{% set title = products.meta.title %}
+{% set metaDesc = products.meta.description %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <img src="https://images.takeshape.io/{{ products.coverImage.path }}?auto=compress&auto=format&w=1600&h=900&fit=crop" alt="">
+{% endblock content %}

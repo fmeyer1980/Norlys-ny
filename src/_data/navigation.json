@@ -34,5 +34,59 @@
                 "url": "/bliv-kunde/"
             }
         ]
+    },
+    "about": {
+        "items": [
+            {
+                "text": "Norlys Vækstpulje"
+            },
+            {
+                "text": "Job"
+            },
+            {
+                "text": "Presse"
+            },
+            {
+                "text": "Organisationen"
+            },
+            {
+                "text": "Andelsselskabet"
+            },
+            {
+                "text": "Hvem er Norlys?"
+            },
+            {
+                "text": "Whistleblower-ordning"
+            }
+        ]
+    },
+    "service": {
+        "items": [
+            {
+                "text": "Find hjælp"
+            },
+            {
+                "text": "El"
+            },
+            {
+                "text": "Gas"
+            },
+            {
+                "text": "SmartHome"
+            }
+        ]
+    },
+    "firms": {
+        "items": [
+            {
+                "text": "Boxer"
+            },
+            {
+                "text": "Eniig Fiber"
+            },
+            {
+                "text": "Stofa"
+            }
+        ]
     }
 }

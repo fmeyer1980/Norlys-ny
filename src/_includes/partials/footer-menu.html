@@ -1,0 +1,50 @@
+<div>
+    <h4>Flytning</h4>
+    <ul class="[ flow ] [ pt-400 flow-space-xs ]">
+        <li>Med flytning</li>
+    </ul>
+</div>
+<hr />
+<div>
+    <h4>Produkter</h4>
+    <ul class="[ flow ] [ pt-400 flow-space-xs ]">
+        {% for item in privatProducts %}
+            <li>
+                <a href="/products/{{ item.title | slug }}">{{ item.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<hr />
+<div>
+    <h4>Kundeservice</h4>
+    <ul class="[ flow ] [ pt-400 flow-space-xs ]">
+        {% for item in navigation.service.items %}
+            <li>
+                <a href="/">{{ item.text }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<hr />
+<div>
+    <h4>Om Norlys</h4>
+    <ul class="[ flow ] [ pt-400 flow-space-xs ]">
+        {% for item in navigation.about.items %}
+            <li>
+                <a href="/">{{ item.text }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<hr />
+    <div>
+    <h4>Andre sider</h4>
+    <ul class="[ flow ] [ pt-400 flow-space-xs ]">
+        {% for item in navigation.firms.items %}
+            <li>
+                <a href="/">{{ item.text }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

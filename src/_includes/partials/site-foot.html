@@ -1,0 +1,28 @@
+<footer class="site-foot [ bg-light-glare ]">
+    <div class="[ container ]">
+        <div class="top [ flow ] [ flow-space-400 md:flow-space-none ]">
+            {% include "partials/footer-menu.html" %}
+        </div>
+        <div class="bottom">
+            <div class="[ flow ] [ flow-space-100 ]">
+                <h4>Norlys</h4>
+                <p class="[ text-100 ]">{{ site.address }},<br />{{ site.zipp }}</p>
+            </div>
+            <div class="[ flow ] [ flow-space-100 ]">
+                <h4>Kontakt</h4>
+                <p>Tlf.: {{ site.phone }}</p>
+                <ul class="[ d-flex flow-left ] [ flow-space-xs pt-xs opc-70 ]">
+                    <li><a href="">{{ '/src/_includes/partials/svg/facebook.svg' | svgContents | safe }}</a></li>
+                    <li><a href="">{{ '/src/_includes/partials/svg/linkedin.svg' | svgContents | safe }}</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="[ flow ] [ flow-space-100 ]">
+                    <h4>Hvad kan vi hjælpe dig med?</h4>
+                    <p class="[ measure-short ]">Vi vil altid tid til en snak. Skriv til os eller giv os et kald. Tryk på start en samtale, og send os en besked.</p>
+                </div>
+                <button class="btn" data-type="secondary" data-size="400">Start en samtale</button>
+            </div>
+        </div>
+    </div>
+</footer>

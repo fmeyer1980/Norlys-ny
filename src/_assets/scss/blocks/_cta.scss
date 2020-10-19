@@ -1,0 +1,31 @@
+.cta{
+    --cta-pad: #{get-size('600')};
+    --cta-oder: column;
+    @include media-query('md'){
+        --cta-oder: row-reverse;
+    }
+
+    @include media-query('lg'){
+        --cta-pad: #{get-size('600')} #{get-size('600')} #{get-size('600')} #{get-size('xl')};
+        --cta-oder: row-reverse;
+    }
+
+    margin-top: get-size('lg');
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--cta-pad);
+    border-radius: 10px;
+    flex-direction: var(--cta-oder);
+    align-items: center;
+
+    img{
+        // margin-top: calc(-1 * var(--size-lg) * 1.3);
+        flex-grow: 1;
+        padding: 0 get-size('lg')
+    }
+
+    > div{
+        flex-basis: 15ch;
+        flex-grow: 9999;
+    }
+}

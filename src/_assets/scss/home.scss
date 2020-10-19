@@ -11,5 +11,5 @@ $outputTokenCSS: false;
 
 @import "blocks/hero";
 @import "blocks/product-home";
-
-// Pull in blocks
+@import "blocks/featured-products";
+@import "blocks/cta";

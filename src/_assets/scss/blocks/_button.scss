@@ -1,0 +1,24 @@
+$btn-size: ('200', '300', '400');
+
+.btn{
+    display: inline-flex;
+    border: none;
+    @include apply-utility("font", "heading");
+
+    @each $btn-size in $btn-size {
+        &[data-size='#{$btn-size}']{
+            font-size: get-size($btn-size);
+        }
+    }
+
+    &[data-type=primary]{
+        border-bottom: 2px solid currentColor;
+    }
+
+    &[data-type=secondary]{
+        padding: .8em 2em;
+        background-color: get-color('secondary');
+        color: get-color('white');
+        border-radius: .625rem;
+    }
+}

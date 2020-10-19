@@ -1,6 +1,6 @@
 .hero{
     position: relative;
-    height: 34rem;
+    height: 26rem;
     display: flex;
     align-items: flex-end;
     &::after{
@@ -9,14 +9,14 @@
         height: 100%;
         position: absolute;
         top: 0;
-        background: linear-gradient(to bottom, rgba(get-color('primary-shade'), 0) 50%,rgba(get-color('primary-shade'), 1));
+        background: linear-gradient(to bottom, rgba(get-color('primary-shade'), .4) 15%, rgba(get-color('primary-shade'), 0) 50%,rgba(get-color('primary-shade'), 1));
         z-index: 1;
     }
     
 
     @include media-query('md'){
-        height: 70vmin;
-        min-height: 40rem;
+        height: 55vmin;
+        min-height: 35rem;
     }
 
     &__video{
@@ -31,7 +31,7 @@
     &__content{
         position: relative;
         z-index: 2;
-        margin-bottom: get-size('xl');
+        margin-bottom: get-size('600');
         color: get-color('light-glare');
     }
 }

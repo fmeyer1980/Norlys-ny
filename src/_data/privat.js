@@ -29,6 +29,29 @@ module.exports = async () => {
                         path
                     }
                   }
+                  about{
+                    headline
+                    bodyTextHtml
+                  }
+                  featuredProducts{
+                    title
+                    pageHeadline
+                    summary
+                    featuredProductsLargeSize
+                    color{
+                      hex
+                    }
+                    coverImage{
+                      path
+                    }
+                  }
+                  cta{
+                    headline
+                    bodyTextHtml
+                    image{
+                      path
+                    }
+                  }
                 }
               }
       `,

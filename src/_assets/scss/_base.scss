@@ -2,7 +2,7 @@ body {
   @include apply-utility("font", "base");
   font-weight: 400;
   font-size: calc(var(--size-100) + 1.6px);
-  background-color: get-color("light-glare");
+  background-color: get-color("primary-glare-light");
   color: get-color("dark-shade");
   @include apply-utility("leading", "normal");
 }

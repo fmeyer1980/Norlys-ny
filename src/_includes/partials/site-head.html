@@ -32,10 +32,13 @@ x-data="{ menu: false }"
             <ul class="main-nav__list">
                 {% for item in navigation.mainNav.items %}
                     <li>
-                        <a class="[ text-200 weight-bold ]" {{ helpers.getLinkActiveState(item.url, page.url) | safe }} href="{{ item.url }}">{{ item.text }}</a>
+                        <a {{ helpers.getLinkActiveState(item.url, page.url) | safe }} href="{{ item.url }}">{{ item.text }}</a>
                     </li>
                 {% endfor %}
+                <li class="search [ d-hidden md:d-flex ]"><span>{{ '/src/_includes/partials/svg/search.svg' | svgContents | safe }}</span>Søg</li>
+                <li class="login [ d-hidden md:d-flex ]"><span>{{ '/src/_includes/partials/svg/login.svg' | svgContents | safe }}</span>Login</li>
             </ul>
+            
         </nav>
     </div>
     

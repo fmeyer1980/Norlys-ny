@@ -11,6 +11,7 @@ module.exports = function (config) {
   config.addFilter('console', function (value) {
     return console.log(value);
   });
+
   config.addFilter('slug', function (str) {
     return str
       .toLowerCase()

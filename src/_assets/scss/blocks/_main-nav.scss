@@ -13,7 +13,7 @@
     
             li{
                 border-bottom: 1px solid rgba(get-color('white'), .06);
-                padding: get-size('200') 0
+                padding: get-size('200') 0;
             }
             
         }
@@ -30,11 +30,12 @@
 
         &__list{
             display: flex;
+            align-items: center;
 
             li{
-
+                font-size: get-size('base');
+                @include apply-utility('weight','bold');
                 a{
-                    font-size: get-size('base');
                     padding: .6em 1.2em;
                     border-radius: 5px;
                     &[data-state='active'],
@@ -42,8 +43,40 @@
                         background-color: get-color('secondary');
                     }
                 }
+
+                &.search, &.login{
+                    align-items: center;
+                    margin-left: 1.5em;
+                    span{
+                        height: 2.375rem;
+                        width: 2.375rem;
+                        border-radius: 50%;
+                        display: flex;
+                        flex-shrink: 0;
+                        margin-right: .5em;
+                        
+                        svg{
+                            margin: auto;
+                        }
+                    }
+                }
+
+                &.search{
+                    span{
+                        border: 1px solid get-color('white');
+                    }
+                    
+                }
+
+                &.login{
+                    span{
+                        background-color: get-color('secondary');
+                    }
+                    
+                }
                 
             }
+
         }
         
     }

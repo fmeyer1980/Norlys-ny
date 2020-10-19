@@ -1,19 +1,35 @@
 {% extends "layouts/base.html" %} 
 {% set pageCriticalStyles = ['css/home.css']%}
-
+{% set title = privat.title %}
+{% set metaDesc = privat.metaDec %}
 
 {% block content %}
     {% include "partials/hero.html" %}
     <div class="product-home [ full-bleed ] [ bg-primary-shade ]">
         <div class="[ container ]">
-            <ul class="product-home__list">
+            <ul class="product-home__list [ reel ] [ color-light-glare ]">
                 {% for item in privatProducts %}
-                    <li class="[ width-mid bg-primary color-light-glare ]">
-                        {{ ('/src/_includes/partials/svg/'+ item.title +'.svg') | svgContents("fill-current") | safe }}
-                        {{ item.title }}
+                    <li class="[ width-tiny lg:width-auto ]">
+                        <a class="[ flow ] [ bg-primary flow-space-sm ]" href="/products/{{ item.title | slug }}">
+                            {{ ('/src/_includes/partials/svg/'+ item.title +'.svg') | svgContents("fill-current") | safe }}
+                            <strong class="[ font-heading text-200 ]">{{ item.title }}</strong>
+                        </a>
                     </li>
                 {% endfor %}
+                <li class="[ width-short ]"><a class="[ bg-secondary text-400 font-heading ]" href="">Bliv kunde!</a></li>
             </ul>
+        </div>
+    </div>
+    {% include "partials/about-home.html" %}
+    {% include "partials/featured-products.html" %}
+    <div class="cta [ flow ] [ bg-primary-glare flow-space-800 lg:flow-space-none ]">
+        <img loading="lazy" src="https://images.takeshape.io/{{ privat.cta.image.path }}" alt="{{ privat.cta.headline }}">
+        <div class="[ flow ] [ flow-space-500 ]">
+            <p class="[ font-heading text-600 leading-tight ]">{{ privat.cta.headline }}</p>
+            <div class="[ text-300 ]">
+                {{ privat.cta.bodyTextHtml | safe }}
+            </div>
+            <a class="btn" data-type="secondary" data-size="300" href="">Søg Vækstpuljen</a>
         </div>
     </div>
 {% endblock content %}
